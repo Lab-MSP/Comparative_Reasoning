@@ -1,0 +1,41 @@
+# Clip 1:
+Auditory Description:
+__AUDIO_DESCRIPTION_1__
+
+Acoustic Features: 
+__OPENSMILE_FEATURES_1__
+
+# Clip 2:
+Auditory Description:
+__AUDIO_DESCRIPTION_2__
+
+Acoustic Features: 
+__OPENSMILE_FEATURES_2__
+
+# Question: 
+__QUESTION__
+
+# Instructions:
+The correct answer is __GROUND_TRUTH_ANSWER__.
+Your task is to provide a concise comparative reasoning that justifies why __GROUND_TRUTH_ANSWER__ expresses a higher level of __EMOTION_TYPE__ than the other clip.
+
+Core Objective: Focus on both the auditory characteristics and the semantic or linguistic cues conveyed in the speech that are most diagnostic for __EMOTION_TYPE__. Integrate both the auditory and semantic evidence to form a unified judgment, evaluating how these cues jointly justify why your chosen answer expresses a higher level of this emotional dimension than the other clip.
+
+Analysis Order & Structure: To ensure a rigorous comparison, you must structure your reasoning in a fixed order: begin with an observation of Clip 1, followed by a comparative observation of Clip 2, and conclude with a synthesis that leads to the final answer.
+
+Conciseness Requirement: Limit your entire reasoning trace to a maximum of 5 sentences. 
+
+Reasoning Guideline: __REASONING_GUIDELINE__
+
+Note: Be direct and efficient. Do not invent or exaggerate features to force the conclusion. If the difference is subtle, acknowledge it objectively while identifying the specific cues that tip the balance toward the correct answer.
+
+Answer as if you are directly listening to both sounds. 
+You may internally use the descriptions for accuracy, but you must not explicitly mention, quote, or refer to the descriptions in your reasoning. 
+Your reasoning must appear grounded purely in auditory perception.
+
+# Output format. 
+Place the final answer inside <answer>...</answer> after the reasoning.  
+Output strictly only the following:
+[Concise comparative reasoning following the Clip 1 → Clip 2 → Comparison structure, maximum 5 sentences]
+<answer> __GROUND_TRUTH_ANSWER__ </answer>
+

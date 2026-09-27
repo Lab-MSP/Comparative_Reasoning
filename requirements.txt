@@ -1,0 +1,8 @@
+# Data generation pipeline (captioning / reasoning requests go to vLLM servers through the OpenAI client)
+numpy
+tqdm
+opensmile>=2.5
+openai>=1.0
+
+# Training and evaluation run in the official ms-swift docker image (includes torch, transformers, vLLM).
+qwen-omni-utils==0.0.8
